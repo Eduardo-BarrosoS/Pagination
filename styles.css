@@ -1,35 +1,87 @@
 
 /*====== GERAL ===========================================*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;800&family=Roboto:wght@400;700&display=swap');
 
 *{
+
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 :root{
-    --primary-color: hsl(19, 100%, 40%);
+    --primary-color:  hsl(216, 78%, 43%);
     --secundary-color: rgb(156, 18, 0);
     --text-color: hsl(0, 0%, 98%);
+    --borders-color: hsla(0, 0%, 74%, 0.116);
 
-    width: 62.5%;
+
+    font-size: 62.4%;
+
 }
 
 html {
-    background: hsl(0, 90%, 4%);
+    margin: 0px 0px;
+    padding: 0;
+    background: hsl(240, 63%, 6%);;
     color: var(--text-color);
 }
 
-.pagination .wrapper {
-    
 
-    gap: 2rem;
-    width: 50rem;
+
+/*===== FIRST SECTION ==============================*/
+
+section{
+    align-self: center;
+    width: 100%;
     height: 100vh;
 }
+.wrapper{
+    margin-inline: auto;
+    max-width: 30rem;
+    height: 100vh;
+    padding-inline: 2rem;
+}
 
-/*===== HEADER ==============================*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding-block: 2rem;
+    margin-bottom: 4rem;
+    
+    color: hsl(209, 77%, 43%);
+}
 
-header {
-    top: 0;
-    background: var(--primary-color);
+div .items {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1.4rem;
+}
+
+div .items div  {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--borders-color);
+    box-shadow: -0.1rem 0.1rem 1rem var(--primary-color);
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.controls div {
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.controls div:hover {
+    color: var(--primary-color);
+    cursor: pointer;
 }
