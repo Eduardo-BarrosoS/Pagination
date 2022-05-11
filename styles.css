@@ -1,0 +1,35 @@
+
+/*====== GERAL ===========================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: hsl(19, 100%, 40%);
+    --secundary-color: rgb(156, 18, 0);
+    --text-color: hsl(0, 0%, 98%);
+
+    width: 62.5%;
+}
+
+html {
+    background: hsl(0, 90%, 4%);
+    color: var(--text-color);
+}
+
+.pagination .wrapper {
+    
+
+    gap: 2rem;
+    width: 50rem;
+    height: 100vh;
+}
+
+/*===== HEADER ==============================*/
+
+header {
+    top: 0;
+    background: var(--primary-color);
+}
