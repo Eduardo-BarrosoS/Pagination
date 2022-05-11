@@ -81,7 +81,8 @@ div .items div  {
     font-weight: 600;
     font-size: 1rem;
 }
-.controls div:hover {
+.controls div:hover,
+.controls div.active {
     color: var(--primary-color);
     cursor: pointer;
 }
