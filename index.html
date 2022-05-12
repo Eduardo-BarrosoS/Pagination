@@ -4,72 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles.css">
     <title>Pagination</title>
 
 </head>
-<body>
+<body >
 
     <section class="pagination">
         <div class="wrapper">
-        <header>
-            <h1> Pagination </h1>
-        </header>
-        <div class="items">
-            
-            <div class="item1">
-                <h3>Item 1</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur 
-                    adipisicing 
-                    elit. Repudiandae voluptate rem esse cum sunt porro 
-                    nobis adipisci aut? A quibusdam architecto doloribus 
-                    velit amet 
-                    exercitationem accusamus nulla 
-                    vel corporis minima?</p>
+            <header>
+                <h1> Pagination </h1>
+            </header>
+            <div id="items" class="items swiper">
+
+                <div class="swiper-wrapper">
+                
+                    <div id="item" class='item swiper-slide'>
+                        <h3>Item 1</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur 
+                            adipisicing 
+                            elit. Repudiandae voluptate rem esse cum sunt porro 
+                            nobis adipisci aut? A quibusdam architecto doloribus 
+                            velit amet 
+                            exercitationem accusamus nulla 
+                            vel corporis minima?</p>
+                    </div>
+                    <div id="item"  class='item swiper-slide'>
+                        <h3>Item 2</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur 
+                            adipisicing 
+                            elit. Repudiandae voluptate rem esse cum sunt porro 
+                            nobis adipisci aut? A quibusdam architecto doloribus 
+                            velit amet 
+                            exercitationem accusamus nulla 
+                            vel corporis minima?</p>
+                    </div>
+                    <div id="item" class='item swiper-slide'>
+                        <h3>Item 3</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur 
+                            adipisicing 
+                            elit. Repudiandae voluptate rem esse cum sunt porro 
+                            nobis adipisci aut? A quibusdam architecto doloribus 
+                            velit amet 
+                            exercitationem accusamus nulla 
+                            vel corporis minima?</p>
+                    </div>
+                    <div id="item" class='item swiper-slide'>
+                        <h3>Item 4</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur 
+                            adipisicing 
+                            elit. Repudiandae voluptate rem esse cum sunt porro 
+                            nobis adipisci aut? A quibusdam architecto doloribus 
+                            velit amet 
+                            exercitationem accusamus nulla 
+                            vel corporis minima?</p>
+                    </div>
+                </div> 
+
+                <div class='swiper-pagination pagination'></div>
+
             </div>
-            <div class="item2">
-                <h3>Item 2</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur 
-                    adipisicing 
-                    elit. Repudiandae voluptate rem esse cum sunt porro 
-                    nobis adipisci aut? A quibusdam architecto doloribus 
-                    velit amet 
-                    exercitationem accusamus nulla 
-                    vel corporis minima?</p>
-            </div>
-            <div class="item3">
-                <h3>Item 3</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur 
-                    adipisicing 
-                    elit. Repudiandae voluptate rem esse cum sunt porro 
-                    nobis adipisci aut? A quibusdam architecto doloribus 
-                    velit amet 
-                    exercitationem accusamus nulla 
-                    vel corporis minima?</p>
-            </div>
-            <div class="item4">
-                <h3>Item 4</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur 
-                    adipisicing 
-                    elit. Repudiandae voluptate rem esse cum sunt porro 
-                    nobis adipisci aut? A quibusdam architecto doloribus 
-                    velit amet 
-                    exercitationem accusamus nulla 
-                    vel corporis minima?</p>
-            </div>
-            
-        </div>
-        <div class="controls">
-            <div class="first">&#171</div>
-            <div class="prev">&lt</div>
-            <div class="numberOfThePage">1</div>
-            <div class="next">&gt</div>
-            <div class="lest">&#187</div>
-        </div>
+
+           
+
+        
+                
+
+            <div class="controls">
+              <!--  <div class="first">&#171</div>
+                <div class="prev">&lt</div>
+                <div class="numberOfThePage">1</div>
+                <div class="next">&gt</div>
+                <div class="lest">&#187</div> -->
+            </div> 
 
     </div>
     </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     
+    <script src="./swiper.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

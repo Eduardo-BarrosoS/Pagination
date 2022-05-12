@@ -38,7 +38,7 @@ section{
 }
 .wrapper{
     margin-inline: auto;
-    max-width: 30rem;
+    max-width: 32rem;
     height: 100vh;
     padding-inline: 3rem;
 }
@@ -54,18 +54,26 @@ header{
     color: hsl(209, 77%, 43%);
 }
 
-div .items {
+
+
+div .items .swiper-wrapper{
+    
     display: flex;
     flex-direction: column;
     text-align: left;
     gap: 1.4rem;
 }
 
-div .items div  {
-    padding: 1rem;
+div .items .swiper-wrapper .swiper-slide  {
+    background: hsla(209, 95%, 17%, 0.183);
     border-radius: 0.3rem;
     border: 0.1rem solid var(--borders-color);
-    box-shadow: -0.1rem 0.1rem 1rem var(--primary-color);
+
+    padding: 1rem;
+    /* margin-right: 1rem;
+    padding: 1rem;
+    
+    box-shadow: -0.1rem 0.1rem 1rem var(--primary-color); */
 }
 
 .controls{
@@ -79,11 +87,19 @@ div .items div  {
 
 .controls div {
     padding: 1rem;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 800;
+    font-size: 1.8rem;
 }
+
 .controls div:hover,
 .controls div.active {
     color: var(--primary-color);
+    cursor: pointer;
+}
+
+.swiper-pagination {
+    background-color: white;
+    position: relative;
+    margin-top: 5rem;
     cursor: pointer;
 }
