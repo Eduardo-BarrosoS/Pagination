@@ -170,7 +170,7 @@ const state = {
     page: 1,
     perPage,
     totalPage: Math.ceil(data.length / perPage),
-    maxVisibleButtons: 5,
+    maxVisibleButtons: 3,
 }
 
 const list = {
